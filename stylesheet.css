@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* jQuery画面遷移用 */
+
+/* header, .content, .introduction{
+  display: none;
+} */
+
+.content{
+  display: block;
+}
+
+.recruitment-page{
+  display: none;
+}
+
+.bulletin-board-page{
+  display: none;
+}
+
+.chat-page{
+  display: none;
+}
+
+.activity-report-page{
+  display: none;
+} 
+
+.notifications-page{
+  display: none;
+} 
+
+
+/* jQuery画面遷移用終わり */
+
+/* 共通CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(240, 253, 255);
+}
+
+li{
+  list-style: none;
+}
+
+/* 共通CSS終わり */
+
+header{
+  height: 800px;
+  background-image: url(./photos/header.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: default;
+}
+
+header h1{
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 200px;
+  transition: all 1s;
+  text-shadow: 1px 1px 3px #0000005f;
+}
+
+header h2{
+  color: rgb(75, 75, 75);
+  font-weight: lighter;
+  margin-top: 335px;
+  width: 100%;
+  text-align: right;
+  font-size: 15px;
+}
+
+header span{
+  color: #EDDEA4;
+  transition: all 1s;
+}
+
+header rt{
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.content ul li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #705c70;
+  border-bottom: solid 5px #0fa3b1;
+  border-top: solid 5px #0fa3b1;
+}
+
+.contents{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contents:hover{
+  border-radius: 90px;
+}
+
+.notifications:hover{
+  border-bottom-left-radius: 90px;
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.recruitment:hover{
+  border-bottom-right-radius: 90px;
+  border-top-right-radius: 90px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+i{
+  font-size: 30px;
+  color: #0fa3b1;
+  padding-right: 10px;
+}
+
+.introduction{
+  clear: both;
+  padding-top: 100px;
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  color: #705c70;
+}
+
+.introduction h3{
+  border-left: solid 3px #0fa3b1;
+  padding-left: 10px;
+}
+
+.introduction p{
+  margin-top: 30px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  right: 3px;
+  font-size: 10px;
+}
+
+.introduction table{
+  margin-top: 100px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.introduction th{
+  border: solid 2px #705c70;
+  width: 200px;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.introduction td{
+  border: solid 2px #705c70;
+  width: 700px;
+  text-align: center;
+}
+
+form, section{
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  clear: both;
+}
+
+label{
+  color: #705c70;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input{
+  text-align: center;
+  color: #705c70;
+}
+
+#view_name, #view_name_activity{
+  width: 430px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  border: 0.5px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+#message, #report{
+  width: 880px;
+  padding: 10px;
+  height: 150px;
+  border: none;
+  background-color: white;
+  border: 0.5px solid #cccccc;
+  margin-bottom: 20px;
+  resize: none;
+  border-radius: 5px;
+  color: #705c70;
+}
+
+#submit_data, #submit_data_activity{
+  width: 160px;
+  padding: 10px;
+  color: #705c70;
+  border: none;
+  background-color: white;
+  border: 0.5px solid #cccccc;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+article{
+  color: #705c70;
+  border-top: solid 3px #0fa3b1;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+.info h2{
+  float: left;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+article p{
+  clear: both;
+}
+
+.info time{
+  float: right;
+}
+
+.error_message{
+  width: 900px;
+  margin: 0 auto;
+  background-color: #f8b18b5d;
+  border: solid 3px #f8b18b;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: #705c70;
+  margin-top: 10px;
+}
+
+.error_message i{
+  font-size: 18px;
+  color: #705c70;
+  padding-left: 15px;
+}
+
+.success_message{
+  clear: both;
+  width: 900px;
+  margin: 0 auto;
+  background-color: #0fa3b165;
+  border: solid 3px #0fa3b1;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: #705c70;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bulletin-board-page, .recruitment-page, .activity-report-page, .chat-page, .notifications-page{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 10000px;
+}
+
+.content-cover{
+  width: 100%;
+  background-color: rgba(240, 253, 255, 0.699);
+}
+
+main{
+  padding-top: 200px;
+}
